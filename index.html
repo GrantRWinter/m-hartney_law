@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Michael P. Hartney Law</title>
+       <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+      
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+
+      <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  
+      <style type="text/css">
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        
+        #map-canvas { height: 80rem; display:block}
+      </style>
+      <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAvAfMExcOXJ18fQFvpfiE6g17lC6GBv8&sensor=true">
+      </script>
+      
+      <script type="text/javascript">
+        function initialize() {
+          var myLatlng = new google.maps.LatLng(51.1225900,-114.0755750);
+          var mapOptions = {
+            center: myLatlng,
+            zoom: 14, 
+            scrollwheel: false,
+          };
+          var map = new google.maps.Map(document.getElementById("map-canvas"),
+              mapOptions);
+
+          var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h2 id="firstHeading" class="firstHeading">Convenient North West Calgary Location</h2>'+
+            '<div id="bodyContent">'+
+            '<h3>631 78th Ave N.W. Calgary Alberta</h3>' +
+            '<h3>Conveniently located just off Center Street in Huntington Hills, the home office of Michael P. Hartney' +
+             ' is located in a residential area with ample parking available</h3>'+
+            
+            '</div>'+
+            '</div>';
+
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString,
+                        });
+
+          var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title:"Micheal P. Hartney Law Office",
+              animation: google.maps.Animation.DROP
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+            toggleBounce;
+            infowindow.open(map,marker);
+          });
+          infowindow.open(map,marker);
+        }
+
+        function toggleBounce() {
+
+          if (marker.getAnimation() != null) {
+            marker.setAnimation(null);
+          } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }        
+        google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
+
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="title" class="navbar-brand animated fadeInLeft" href="#">Michael P. Hartney Law</a>
+          <h2 class="phone-number hidden-sm hidden-xs">(403) 226-6229</h2>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+          <ul class="animated fadeInRight nav navbar-nav navbar-right">
+            <li id="team-link"><a href="#">The Team</a></li>
+            <li>|</li>
+            <li id="services-link"><a href="#">Our Services</a></li>
+            <li>|</li>
+            <li id="location-link"><a href="#">Location</a></li>
+            <li>|</li>
+            <li id="contact-link"><a href="#">Contact Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    
+
+    <section class="row hidden-sm hidden-xs" id="hero">
+     
+      <div class="background hidden-sm hidden-xs"></div>
+          <div class="container hidden-sm hidden-xs">
+              <h1 class="marquee hidden-sm hidden-xs">Serving Calgary families since 1982</h1>
+          </div>
+    
+    </section>
+      <!--[if lt IE 8]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- Add your site or application content here -->
+
+    <section class="row small-screen-number visible-sm visible-xs">
+      <div>(403) 274-7408</div>
+    </section>
+      
+    <section class="row" id="team">
+      <div class="row">
+        <h1 class="section-header">The Legal Team</h1>
+      </div>
+      <div class="container">
+        <div class=" col-md-6 ">
+          <div class="team-member" style="background-image: url(images/mike.jpeg); height:50rem">
+            <div class="team-member-details">
+            <br />
+              <div><h1 class="name">Michael Hartney</h1></div>
+              <hr>
+              <div class="resume">
+                <ul>
+                  <li><em>We've been providing legal services to Calgary families for over 30 years</em></li>
+                  <li>Notary Public, Commissioner for Oaths</li>
+                  <li>Member of the Alberta Bar Since 1982</li>
+                  <li>LL.B. 1981 University of Calgary</li>
+                  <li>B.Ed 1972 University of Saskatchewan</li>
+                  <li>B.A. 1969 University of Saskatchewan</li>  
+                </ul>
+              </div>
+            </div>
+            <div class="screen"></div>
+          </div>
+
+        </div>
+        <div class=" col-md-6 ">
+          <div class="team-member" style="background-image: url(images/kim.jpeg); height:50rem">
+            <div class="team-member-details">
+            <br />
+              <div ><h1 class="name">Kimberly D. Bespflug</h1></div>
+              <hr>
+              <div class="resume">
+                <ul>
+                  <li>Commissioner for Oaths</li>
+                  <li>Diploma Legal Assistant 1999 SAIT</li>
+                  <li>15 years Paralegal Experience in Alberta</li>
+                  <li>Direct Line: (403) 980-5824</li>
+                  <li>Direct Fax: (403) 980-0305</li>
+                  <li>Email: kimberleybespflug@shaw.ca</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="row" id="services">
+      <div class="container">
+        <div class="row">
+          <h1 class="section-header">Our Services</h1>
+        </div>
+
+        <div class="row service">
+          <div class="col-md-2"><h1><i class="fa fa-home fa-3x font-icon"></i><h1></div>
+          <div class="col-md-10 service-box"><h1 class="row service-headline">Real Estate and Mortgages</h1><p class="row service-content">Whether you are buying, selling or refinancing we'll be able to advise you in all situations of sale by owners, helping to prepare purchase and sales agreements and taking steps to ensure you avoid the pitfalls.</p></div>
+        </div>
+        <br />
+
+        <div class="row">
+          <hr/>
+        </div>
+
+        <div class="row service">
+          <div class="col-md-2"><h1><i class="fa fa-file fa-3x font-icon"></i><h1></div>
+          <div class="col-md-10 service-box"><h1 class="row service-headline">Wills and Estates</h1><p class="service-content">We have extensive experience in assisting Executors with probate applications, including assisting with tax concerns and referrals to other professionals such as Accountants. Our experience extends to dealing with estate matters that have remifications in other provinces and countries such as the US and UK. We assist in making the procedure as simple and straightforward as possible.
+          <br />
+          <br />
+          We recommend that everyone have a will, enduring power of attorney and personal directive. We are able to provide them for singles or couples addressing all of your concerns, including ensuring steps will be taken immediately in situations such as accidents or other medical emergencies. </p></div>
+        </div>
+        <br />
+
+        <div class="row">
+          <hr/>
+        </div>
+
+
+
+        <div class="row service">
+          <div class="col-md-2"><h1><i class="fa fa-users fa-3x font-icon"></i></h1></div>
+          <div class="col-md-10 service-box"><h1 class="row service-headline">Commercial/Professional Corporations and Societies</h1><p class="service-content">If you wish to incoroporate your business or professional pracitce (such as medical, dental, veterinary or similar practice) we are able to assit you as we have many others in the past. We also keep most fo the companies we act for in good standing with the Alberta or Canada Corporate Registries on a yearly basis as required.</p></div>
+        </div>
+        <br />
+
+        <div class="row">
+          <hr/>
+        </div>
+
+        <div class="row service">
+          <div class="gavel col-md-2"><h1 id="gavel"><i class="fa fa-gavel fa-3x font-icon"></i></h1></div>
+          <div class="col-md-10 service-box"><h1 class="row service-headline">Family Law</h1><p class="service-content">We provide advice and prepare pre-nuptial, cohabitation and separation agreements as well as represent clients in uncontested <i>divorce and separation</i> matters. We represent clients in the Court of Queen's Bench and Provincial Court where required, but our approach is always to reach agreements respectfully and amicably without the incurring expensive litigation costs wherever possible.</p></div>
+        </div>
+        <br />
+        
+        <div class="row">
+          <hr/>
+        </div>
+          
+        <div class="row service">
+          <div class="col-md-2"><h1><i class="fa fa-plane fa-3x font-icon"></i><h1></div>
+
+          <div class="col-md-10 service-box"><h1 class="row service-headline">Notarizations and Parental Travel Consents</h1><p class="service-content">We prepare Notarized Travel Consents for parents allowing their children to travel with other parents, relatives or friends as may be required both in and outside of Canada.
+          <br />
+          <br />
+          We also notarize documents for use both within and outside of Canada, taking special care to ensure that the documents are notarized in a form acceptable in the juristiction where they will be used.
+          </p></div>
+        </div>
+
+
+        <br />
+        <br />
+        <br />
+
+
+
+        
+
+        
+
+        
+      </div>
+    </section>
+ 
+    <div class="row" id="map-canvas"></div>
+    
+    <section class="row" id="contact">
+    <div class="container">
+      <h1 class="contact-header">We'd love to hear from you<em>!</em></h1><h2 class="contact-sub-header">Call us on <strong>(403) 274-7408</strong><br />or<br /> Leave your details and we'll give you a call to discuss how we can help you</h2>
+
+
+            <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup contact" class="col-md-offset-1 col-md-10">
+      <form action="http://mikehartney.us8.list-manage.com/subscribe/post?u=538c9391b111f6d372bcbab30&amp;id=1498e1bdab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        
+      <div class="indicates-required"><h3><span class="asterisk">*</span> indicates required<h3></div>
+      <div class="mc-field-group input-group input-group-lg">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+      </label>
+        <input type="email" value="" name="EMAIL"  class="required email form-control" id="mce-EMAIL" placeholder="johndoe@email.com">
+      </div>
+
+      <div class="mc-field-group input-group input-group-lg">
+        <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+      </label>
+        <input type="text" value="" name="FNAME" class="required form-control" id="mce-FNAME" placeholder="John">
+      </div>
+
+      <div class="mc-field-group input-group input-group-lg">
+        <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+      </label>
+        <input type="text" value="" name="LNAME" class="required form-control input-lg" id="mce-LNAME" placeholder="Doe">
+      </div>
+
+      <div class="mc-field-group size1of2 input-group input-group-lg">
+        <label for="mce-MMERGE3">Phone Number  <span class="asterisk">*</span>
+      </label>
+        <input type="text" name="MMERGE3" class="required form-control" value="" id="mce-MMERGE3" placeholder="(403) 275-5555">
+      </div>
+
+      <div class="mc-field-group input-group input-group-lg">
+        <label for="mce-MMERGE4">What can we help with?  <span class="asterisk">*</span>
+      </label>
+        <textarea type="text" rows="3" value="" name="MMERGE4" class="required form-control" id="mce-MMERGE4" placeholder="Give us some breif detial in relation to your legal needs"></textarea>
+      </div>
+
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_538c9391b111f6d372bcbab30_1498e1bdab" tabindex="-1" value=""></div>
+          <h3><button class="clear button btn btn-lg contact-submit-button" input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Contact</button><h3>
+      </form>
+      </div>
+
+<!--End mc_embed_signup-->
+    </div>
+
+
+
+
+
+      
+  </section>
+
+
+  
+    <footer class="footer row">
+      <div class="">
+        <div></div>
+        <div class="footer-content col-sm-offset-8 col-sm-4">
+          <p>Michael P. Hartney</p>
+          <p>(403) 274-7408<p>
+          <p>631 78th Ave N.W.</p>
+          <p>Calgary, Alberta</p>
+          <p>© 2014 Michael Hartney | All rights reserved</p>
+          <p>Photograph of Calgary courtesy of <a class="visit-calgary-link" href="http://www.visitcalgary.com/">visitcalgary</a></p>
+        </div>
+    </footer>
+      
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.velocity.min.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+
+  </body>
+</html>
