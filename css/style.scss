@@ -93,6 +93,17 @@ fieldset {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+$color1: #105B63;
+$color2: #FFFAD5;
+$color3: #DB9E36;
+$color4: #BD4431;
+$color5: white;
+$color6: black;
+
+$prime-font: "Arvo", serif;
+$second-font: helvetica, sans-serif;
+
 body {
   margin-top: 10rem;
   width: 100%;
@@ -122,21 +133,22 @@ body {
 }
 
 #firstHeading {
-  color: #105B63;
-  font-family: "Arvo";
+  color: $color1;
+  font-family: $prime-font;
 }
 
 .navbar-inverse{
-    background-color: #105B63;
-    border: 1px solid #105B63;
-    opacity: 1;
-    height: 12rem;
+  background-color: $color1;
+  border: 1px solid $color1;
+  opacity: 1;
+  height: 12rem;
+  .navbar-brand:hover {
+    color:$color6;
+  }
 }
-.navbar-brand:hover {
-  color:black;
-}
+
 .navbar-inverse .navbar-brand{
-    color: #FFFAD5;
+    color: $color2;
 }
 .nav {
   font-size: .7em;
@@ -152,16 +164,16 @@ body {
   -webkit-transtion: .3s;
   -moz-transition: .3s;
   transition: .3s;
-  color: #DB9E36;
+  color: $color3;
 }
 
 .navbar-inverse .navbar-nav>li>a {
   font-family: 'Arvo', serif;
-  color: #FFFAD5;
+  color: $color2;
 }
 
 .navbar-nav {
-  background-color:#105B63 ;
+  background-color:$color1 ;
 }
 
 #title {
@@ -170,56 +182,56 @@ body {
   transition: .3s;
   font-family: 'Arvo', serif;
   font-size: 3em;
-  /*text-shadow: 0.1rem 0.1rem 0.1rem #FFFAD5;*/
+  /*text-shadow: 0.1rem 0.1rem 0.1rem $color2;*/
 }
 #title:hover {
   -webkit-transtion: .3s;
   -moz-transition: .3s;
   transition: .3s;
-  color: #DB9E36;
-  /*text-shadow: 0.1rem 0.1rem 0.1rem #FFFAD5;*/
+  color: $color3;
+  /*text-shadow: 0.1rem 0.1rem 0.1rem $color2;*/
 }
 
 
 .phone-number{
   font-size: 3em;
   font-family: 'Arvo';
-  color: #FFFAD5;
+  color: $color2;
 }
 .marquee {
-  font-family: "Arvo", serif;
+  font-family: $prime-font, serif;
   font-size: 7em;
   margin-top: 12rem;
   margin-bottom: 0px;
-  color: #FFFAD5;
-  text-shadow: 0.7rem 0.7rem 0.3rem black;
+  color: $color2;
+  text-shadow: 0.7rem 0.7rem 0.3rem $color6;
   background:transparent;
 }
 
 
 .section-header {
-  font-family: "Arvo";
-  color: #FFFAD5;
+  font-family: $prime-font;
+  color: $color2;
   text-align: center;
   font-size: 6em;
   margin-bottom: .5em;
-  text-shadow: .3rem .3rem .2rem #105B63;
+  text-shadow: .3rem .3rem .2rem $color1;
 }
 
 h1 {
-    font-family: 'Helvetica', serif;
+    font-family: $second-font, serif;
     font-size: 4em
 }
 
 hr {
-  background-color: #105B63 ;
+  background-color: $color1 ;
   border: none;
   height: .5em;
   
 }
 
 .font-icon{
-  color: #105B63;
+  color: $color1;
 }
 
 .name {
@@ -248,20 +260,20 @@ hr {
 /*.jumbotron {
   margin-bottom: 0px;
   height: 700px;
-  color: white;
-  text-shadow: black 0.3em 0.3em 0.3em;
+  color: $color5;
+  text-shadow: $color6 0.3em 0.3em 0.3em;
   background:transparent;
 }*/
 
 #services {
-    background-color: #DB9E36;
+    background-color: $color3;
     ;
      
 }
 
 .service-headline {
-  font-family: "Arvo";
-  color: #105B63
+  font-family: $prime-font;
+  color: $color1
 }
 
 .service-content {
@@ -279,7 +291,7 @@ hr {
 
 
 #team {
-    background-color: #BD4431;
+    background-color: $color4;
     width: 100%;
     margin-top: 40rem;
     /*//text-align: center*/
@@ -288,10 +300,10 @@ hr {
 
 
 .footer {
-    background-color: #105B63;
+    background-color: $color1;
     height: 200px;
-    color: #FFFAD5;
-    /*text-shadow: .1rem .1rem .0rem #FFFAD5;*/
+    color: $color2;
+    /*text-shadow: .1rem .1rem .0rem $color2;*/
     text-align: right
 }
 
@@ -309,11 +321,11 @@ hr {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border: 2px solid #105B63;
+  border: 2px solid $color1;
   border-radius: 5px;
-  -moz-box-shadow: 0.5px 0.5px #105B63, 1px 1px #105B63, 2px 2px #105B63, 3px 3px #105B63, 4px 4px #105B63, 5px 5px #105B63, 6px 6px #105B63, 7px 7px #105B63, 8px 8px #105B63;
-  -webkit-box-shadow: 0.5px 0.5px 4px #105B63, 1px 1px #105B63, 2px 2px #105B63, 3px 3px #105B63, 4px 4px #105B63, 5px 5px #105B63, 6px 6px #105B63, 7px 7px #105B63, 8px 8px #105B63;
-  box-shadow: 0.5px 0.5px #105B63 1px 1px #105B63, 2px 2px #105B63, 3px 3px #105B63, 4px 4px #105B63, 5px 5px #105B63, 6px 6px #105B63, 7px 7px #105B63, 8px 8px #105B63;
+  -moz-box-shadow: 0.5px 0.5px $color1, 1px 1px $color1, 2px 2px $color1, 3px 3px $color1, 4px 4px $color1, 5px 5px $color1, 6px 6px $color1, 7px 7px $color1, 8px 8px $color1;
+  -webkit-box-shadow: 0.5px 0.5px 4px $color1, 1px 1px $color1, 2px 2px $color1, 3px 3px $color1, 4px 4px $color1, 5px 5px $color1, 6px 6px $color1, 7px 7px $color1, 8px 8px $color1;
+  box-shadow: 0.5px 0.5px $color1 1px 1px $color1, 2px 2px $color1, 3px 3px $color1, 4px 4px $color1, 5px 5px $color1, 6px 6px $color1, 7px 7px $color1, 8px 8px $color1;
   -webkit-backface-visibility:hidden; /* Chrome, Safari, Opera */
   backface-visibility:hidden;
   overflow: hidden;
@@ -329,18 +341,18 @@ hr {
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
-    background-color: #FFFAD5;
+    background-color: $color2;
     opacity: 0.85;
-    color: #105B63;
-    border: 1px solid #FFFAD5;
+    color: $color1;
+    border: 1px solid $color2;
 }
 
 
 /*.team-member:hover {
   transition: 4s;
-  -moz-box-shadow: -0.5px -0.5px #FFFAD5, -1px -1px #FFFAD5, -2px -2px #FFFAD5, -3px -3px #FFFAD5, -4px -4px #FFFAD5, -5px -5px #FFFAD5, -6px -6px #FFFAD5, -7px -7px #FFFAD5, -8px -8px #FFFAD5;
-  -webkit-box-shadow: -0.5px -0.5px #FFFAD5, -1px -1px #FFFAD5, -2px -2px #FFFAD5, -3px -3px #FFFAD5, -4px -4px #FFFAD5, -5px -5px #FFFAD5, -6px -6px #FFFAD5, -7px -7px #FFFAD5, -8px -8px #FFFAD5;
-  box-shadow: -0.5px -0.5px #FFFAD5 -1px -1px #FFFAD5, -2px -2px #FFFAD5, -3px -3px #FFFAD5, -4px -4px #FFFAD5, -5px -5px #FFFAD5, -6px -6px #FFFAD5, -7px -7px #FFFAD5, -8px -8px #FFFAD5;
+  -moz-box-shadow: -0.5px -0.5px $color2, -1px -1px $color2, -2px -2px $color2, -3px -3px $color2, -4px -4px $color2, -5px -5px $color2, -6px -6px $color2, -7px -7px $color2, -8px -8px $color2;
+  -webkit-box-shadow: -0.5px -0.5px $color2, -1px -1px $color2, -2px -2px $color2, -3px -3px $color2, -4px -4px $color2, -5px -5px $color2, -6px -6px $color2, -7px -7px $color2, -8px -8px $color2;
+  box-shadow: -0.5px -0.5px $color2 -1px -1px $color2, -2px -2px $color2, -3px -3px $color2, -4px -4px $color2, -5px -5px $color2, -6px -6px $color2, -7px -7px $color2, -8px -8px $color2;
   
 }*/
 
@@ -362,10 +374,11 @@ li {
 
 .contact-header {
   margin-bottom: .5rem;
-  color: #FFFAD5;
-  font-size: 6em;
+  color: $color2;
+  font-size: 4em;
   font-family: 'Arvo';
-  text-shadow: .3rem .3rem .2rem #105B63;
+  text-shadow: .3rem .3rem .2rem $color1;
+  text-align: center;
 }
 .contact-sub-header {
   font-size: 4em;
@@ -376,9 +389,10 @@ li {
 
 /* ********** mail chimp styles **************/
 #contact {
-   background-color: #BD4431;
+   background-color: $color4;
    /*height: 700px;*/
    padding-bottom: 3rem;
+   padding-top: 5rem;
 }
 
 .input-group-lg {
@@ -387,8 +401,8 @@ li {
 
 
 .contact-submit-button {
-  background-color: #105B63;
-  color: #FFFAD5;
+  background-color: $color1;
+  color: $color2;
   height: 5rem;
   width: 15rem;
   -webkit-transition: .3s;
@@ -397,8 +411,8 @@ li {
 }
 
 .contact-submit-button:hover {
-  background-color: #FFFAD5;
-  color: #105B63;
+  background-color: $color2;
+  color: $color1;
   -webkit-transition: .3s;
   -moz-transtion: .3s;
   transition: .3s;
@@ -415,10 +429,10 @@ label {
 
 .visit-calgary-link {
   text-decoration: none;
-  color: white;
+  color: $color5;
 }
 .visit-calgary-link:hover{
-  color: white;
+  color: $color5;
   
 }
 
