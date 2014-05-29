@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+
+  
   $gavel = $("#gavel");
   $service = $('.service');
   $(window).scroll(function(){
@@ -30,4 +33,4 @@ $(document).ready(function() {
     $('#hero').velocity('scroll', {duration: 1500, easing: "easeOutQuint", offset: -100})
   })
   
-})
+});
