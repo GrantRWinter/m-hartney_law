@@ -1,12 +1,12 @@
 $(document).ready(function() {
-  $gavel = $("#gavel");
   $service = $('.service');
   $(window).scroll(function(){
     scrtop = $(window).scrollTop();
     serviceBox = $(".service-box")
     $service.each (function(){
-      if (($(window).height() + scrtop) > $(this).offset().top)
+      if (($(window).height() + scrtop) > $(this).offset().top){
         $(this).find($('.service-box')).velocity({opacity: 1}, {duration:1700}).end().find($('.font-icon')).addClass("animated fadeInLeft");;
+      }
     });
   });
 
