@@ -9,7 +9,8 @@ $(document).ready(function() {
     serviceBox = $(".service-box")
     $service.each (function(){
       if (($(window).height() + scrtop) > $(this).offset().top)
-        $(this).find($('.service-box')).velocity({opacity: 1}, {duration:1700}).end().find($('.font-icon')).addClass("animated fadeInLeft");;
+        $(this).find($('.service-box')).velocity({opacity: 1}, {duration:1900}).end().find($('.font-icon')).addClass("animated fadeInLeft");
+      //$(this).find($('.service-box')).addClass("animated fadeInUp").end().find($('.font-icon')).addClass("animated fadeInLeft");
     });
   });
 
