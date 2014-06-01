@@ -114,7 +114,7 @@ body {
 .navbar-inverse {
   background-color: #105b63;
   border: 1px solid #105b63;
-  opacity: 1; }
+   }
   .navbar-inverse .navbar-brand:hover {
     color: black; }
 
@@ -125,7 +125,8 @@ body {
   color: #fffad5; }
 
 .nav {
-  font-size: .7em; }
+  font-size: .7em;
+  }
 
 .navbar-inverse .navbar-nav > li > a {
   -webkit-transtion: .3s;
@@ -160,6 +161,8 @@ body {
 .navbar-nav {
   background-color: #105b63; }
 
+
+
 #title {
   -webkit-transtion: .3s;
   -moz-transition: .3s;
@@ -190,27 +193,9 @@ body {
   font-family: 'Arvo';
   color: #fffad5; }
 
-.marquee {
-  font-family: "Arvo", serif, serif;
-  margin-top: 12rem;
-  margin-bottom: 0px;
-  color: #fffad5;
-  text-shadow: 0.7rem 0.7rem 0.3rem black;
-  background: transparent; }
-  @media screen and (max-width: 767px) {
-    .marquee {
-      font-size: 4em; } }
-  @media screen and (min-width: 768px) {
-    .marquee {
-      font-size: 4em; } }
-  @media screen and (min-width: 992px) {
-    .marquee {
-      font-size: 5em;
-      margin-top: 12rem; } }
-  @media screen and (min-width: 1200px) {
-    .marquee {
-      font-size: 7em;
-      margin-top: 12rem; } }
+
+  
+  
 
 .section-header {
   font-family: "Arvo", serif;
@@ -285,18 +270,30 @@ hr {
   margin-top: 0px;
   text-align: center; }
 
-.background {
-  background: url(../images/calgary.jpg) no-repeat center center;
-  height: 74rem;
-  position: fixed;
+#hero-wrapper {
   width: 100%;
+  overflow: hidden;
+  
+}
+
+.background {
+  background: url(../images/calgary.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: blue;
+  /*background-attachment: fixed;*/
+  height: 74rem;
+  width: 110%;
+  margin-left: -2px;
+  margin-right: -2px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0;*/
   z-index: -1;
+  
   margin-top: 7rem; }
   @media screen and (max-width: 767px) {
     .background {
@@ -311,13 +308,31 @@ hr {
     .background {
       height: 74rem; } }
 
-/*.jumbotron {
-  margin-bottom: 0px;
-  height: 700px;
-  color: $color5;
-  text-shadow: $color6 0.3em 0.3em 0.3em;
-  background:transparent;
-}*/
+.marquee {
+  font-size: ;
+  font-family: "Arvo", serif, serif;
+  display: table-cell;
+  z-index: 10;
+  position:relative;
+  margin-top: 12rem;
+  margin-bottom: 40rem;
+  color: #fffad5;
+  text-shadow: 0.3rem 0.3rem 0.1rem black;
+  background: transparent; }
+  @media screen and (max-width: 767px) {
+    .marquee {
+      font-size: 4em; } }
+  @media screen and (min-width: 768px) {
+    .marquee {
+      font-size: 4em; } }
+  @media screen and (min-width: 992px) {
+    .marquee {
+      font-size: 4em;
+       } }
+  @media screen and (min-width: 1200px) {
+    .marquee {
+      font-size: 5em;
+       } }
 #services {
   background-color: #db9e36; }
 
@@ -326,7 +341,7 @@ hr {
   color: #105b63; }
   @media screen and (max-width: 767px) {
     .service-headline {
-      font-size: 1.7em; } }
+      font-size: 2em; } }
   @media screen and (min-width: 768px) {
     .service-headline {
       font-size: 2.4em; } }
@@ -369,8 +384,9 @@ hr {
 #team {
   background-color: #bd4431;
   width: 100%;
-  margin-top: 40rem;
-  /*//text-align: center*/ }
+  padding-top: 3rem;
+  
+  text-align: center }
   @media screen and (max-width: 767px) {
     #team {
       margin-top: 0; } }
@@ -379,10 +395,10 @@ hr {
       margin-top: 0; } }
   @media screen and (min-width: 992px) {
     #team {
-      margin-top: 40rem; } }
+      /*margin-top: 40rem;*/ } }
   @media screen and (min-width: 1200px) {
     #team {
-      margin-top: 40rem; } }
+      /*margin-top: 40rem;*/ } }
 
 .footer {
   background-color: #105b63;
@@ -572,6 +588,8 @@ label {
 
 .visit-calgary-link:hover {
   color: white; }
+
+
 
 /* ==========================================================================
    Helper classes

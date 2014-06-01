@@ -18,6 +18,7 @@
       <link rel="stylesheet" href="css/style.css">
       <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
+
       <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
       <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -39,6 +40,7 @@
             center: myLatlng,
             zoom: 14, 
             scrollwheel: false,
+            draggable: false,
           };
           var map = new google.maps.Map(document.getElementById("map-canvas"),
               mapOptions);
@@ -118,17 +120,32 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <section class="row small-screen-number-box visible-sm visible-xs">
+
+
+    <!-- <section class="row small-screen-number-box visible-sm visible-xs">
       <div class="small-screen-number"><p>We've been serving the legal needs of Calgarians since 1982 <br />
       Contact us now on <br />(403) 226-6229</p></div>
-    </section>
+    </section> -->
 
-    <section class="row hidden-sm hidden-xs" id="hero">
-      <div class="background hidden-sm hidden-xs"></div>
-      <div class="container hidden-sm hidden-xs">
-        <h1 class="marquee hidden-sm hidden-xs">Serving Calgary families since 1982</h1>
+<section class="row" id="hero-wrapper">
+    <div class="hidden-sm hidden-xs background" data-smooth-scrolling=true  id="hero" data-center="background-position: 0px 50%;" 
+          data-bottom-top="background-position: 50px 40%;" 
+          data-top-bottom="background-position: -80px 0%;" 
+          data-anchor-target="#hero">
+      
+      <div class="hidden-sm hidden-xs">
+        <h1 class="marquee hidden-sm hidden-xs" data-smooth-scrolling=true data-2p="opacity:1; transform: translateY(10rem)translateX(15rem);"  
+        data-35p=" opacity:1; transform:translateY(55rem) translateX(15rem);" data-65p=" opacity:0; transform:translateY(55rem) translateX(15rem); ">Serving Calgary families<br /> since 1982</h1>
       </div>
-    </section>
+    </div>
+</section>
+
+
+    <!-- <div data-0="background-color:rgb(0,0,255);" data-200="background-color:rgb(255,0,0);">WOOOT</div>
+    <div data-0="background-color:rgb(0,0,255);transform:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform:rotate(360deg);">WOOOT</div> -->
+   <!--  <div data-60="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg) scale(1);" data-1500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg) scale(7);">WOOOT</div>
+
+    <div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-top="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);">WOOOT</div> -->
       <!--[if lt IE 8]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -236,8 +253,9 @@
           <div class="col-md-2"><h1 ><i class="fa fa-home fa-3x font-icon"></i></h1></div>
         </div>
         <div class="row service">
-          <div class="col-md-9 col-md-offset-3 service-box"><h1 class="row service-headline">Real Estate and Mortgages&nbsp&nbsp</h1>
-          <p class="row service-content">Whether you are buying, selling or refinancing we will be able to assist you.  In a sale by owner, we can help you prepare Purchase and Sale Agreements and take steps to ensure you avoid any pitfalls.</p>
+          <div class="col-md-9 col-md-offset-3 service-box">
+            <h1 class="row service-headline">Real Estate and Mortgages&nbsp&nbsp</h1>
+            <p class="row service-content">Whether you are buying, selling or refinancing we will be able to assist you.  In a sale by owner, we can help you prepare Purchase and Sale Agreements and take steps to ensure you avoid any pitfalls.</p>
           </div>
         </div>
           
@@ -252,7 +270,7 @@
         </div>
         <div class="row service">
           <div class="col-md-9 col-md-offset-3 service-box">
-           <h1 class="row service-headline">Wills and Estates&nbsp&nbsp</h1>
+            <h1 class="row service-headline">Wills and Estates&nbsp&nbsp</h1>
             <p class="row service-content">We have extensive experience in assisting Executors with probate applications, including assisting with tax concerns and referrals to other professionals such as Accountants. Our experience extends to dealing with estate matters that have ramifications in other provinces and countries such as the US and UK. We make the procedure as simple and straightforward as possible.
             <br />
             <br />
@@ -409,6 +427,9 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-
+    <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
   </body>
 </html>
