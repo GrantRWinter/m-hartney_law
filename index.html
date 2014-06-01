@@ -40,7 +40,7 @@
             center: myLatlng,
             zoom: 14, 
             scrollwheel: false,
-            // draggable: false,
+            draggable: false,
           };
           var map = new google.maps.Map(document.getElementById("map-canvas"),
               mapOptions);
@@ -122,30 +122,20 @@
 
 
 
-    <!-- <section class="row small-screen-number-box visible-sm visible-xs">
+    <section class="row small-screen-number-box visible-sm visible-xs">
       <div class="small-screen-number"><p>We've been serving the legal needs of Calgarians since 1982 <br />
       Contact us now on <br />(403) 226-6229</p></div>
-    </section> -->
+    </section>
 
-<section class="row" id="hero-wrapper">
-    <div class="hidden-sm hidden-xs background" data-smooth-scrolling=true  id="hero" data-center="background-position: 0px 50%;" 
-          data-bottom-top="background-position: 50px 40%;" 
-          data-top-bottom="background-position: -80px 0%;" 
-          data-anchor-target="#hero">
-      
-      <div class="hidden-sm hidden-xs">
-        <h1 class="marquee hidden-sm hidden-xs" data-smooth-scrolling=true data-2p="opacity:1; transform: translateY(15rem)translateX(15rem);"  
-        data-35p=" opacity:1; transform:translateY(55rem) translateX(15rem);" data-65p=" opacity:0; transform:translateY(55rem) translateX(15rem); ">Serving Calgary families<br /> since 1982</h1>
+    <section class="row hidden-sm hidden-xs" id="hero">
+      <div class="background hidden-sm hidden-xs"></div>
+      <div class="container hidden-sm hidden-xs">
+        <h1 class="marquee hidden-sm hidden-xs">Serving Calgary families since 1982</h1>
       </div>
-    </div>
-</section>
+    </section>
 
 
-    <!-- <div data-0="background-color:rgb(0,0,255);" data-200="background-color:rgb(255,0,0);">WOOOT</div>
-    <div data-0="background-color:rgb(0,0,255);transform:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform:rotate(360deg);">WOOOT</div> -->
-   <!--  <div data-60="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg) scale(1);" data-1500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg) scale(7);">WOOOT</div>
-
-    <div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-top="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);">WOOOT</div> -->
+    
       <!--[if lt IE 8]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -428,8 +418,6 @@
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
     <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
-    <script type="text/javascript">
-    var s = skrollr.init();
-    </script>
+
   </body>
 </html>
