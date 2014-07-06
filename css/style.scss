@@ -94,10 +94,10 @@ fieldset {
    Author's custom styles
    ========================================================================== */
 
-$color1: #105B63;
-$color2: #FFFAD5;
-$color3: #DB9E36;
-$color4: #BD4431;
+$color1: #105B63; // blue
+$color2: #FFFAD5; // beige
+$color3: #DB9E36; // muddy-yellow
+$color4: #BD4431; // dark-orange
 $color5: white;
 $color6: black;
 
@@ -347,13 +347,6 @@ hr {
   height: .5em;
 }
 
-.name {
-  font-family: 'Arvo', serif;
-  font-size: 3em;
-  margin-top: 0px;
-  text-align: center
-}
-
 .background{
   background: url(../images/calgary.jpg) no-repeat center center;
   height: 74rem;
@@ -504,6 +497,7 @@ hr {
   -webkit-backface-visibility:hidden; /* Chrome, Safari, Opera */
   backface-visibility:hidden;
   overflow: hidden;
+
   
   @media screen and (max-width: $break-xsm){
       margin-bottom: 0rem;
@@ -533,17 +527,30 @@ hr {
 .team-member-details{
   padding: 0, 5, 0, 5;
   position: relative;
-  margin-top: 75%;
+  
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.7s;
-  -moz-transition: 0.7s;
-  transition: 0.7s;
+  // -webkit-transition: 0.7s;
+  // -moz-transition: 0.7s;
+  // transition: 0.7s;
   background-color: $color2;
   opacity: 0.85;
   color: $color1;
   border: 1px solid $color2;
-  
+  .btn-lg {
+    border-radius: 0;
+    margin-left: 2rem;
+    color: $color2;
+    background-color: $color1;
+    width: 20%;
+    margin-left:0;
+  }
+  .name {
+    font-family: 'Arvo', serif;
+    //font-size: 3em;
+    //margin-top: 0px;
+    text-align: center
+  }
   @media screen and (max-width: $break-xsm){
     visibility: none;
     
@@ -553,6 +560,13 @@ hr {
     
   }
   @media screen and (min-width: $break-md){
+    margin-top: 68%;
+    .btn-lg {
+      margin-bottom: 1rem;
+    }
+    .name {
+      font-size: 2em;
+    }
     .resume {
       li {
         font-size: 1.5em;
@@ -562,6 +576,11 @@ hr {
     
   }
   @media screen and (min-width: $break-lg){
+    margin-top: 74%;
+    .name {
+      font-size: 2.5em;
+      margin-top: 1rem;
+    }
     .resume {
       li {
         font-size: 2em;
@@ -576,7 +595,12 @@ hr {
   margin-top:0px;
   margin-bottom: 3rem;
   font-size: .7em;
-
+  .name {
+    font-family: 'Arvo', serif;
+    font-size: 3em;
+    margin-top: 0px;
+    text-align: center
+  }
   h1{
     margin-top: .5rem;
     color: $color2
@@ -603,12 +627,12 @@ hr {
   
 }*/
 
-.team-member:hover .team-member-details {
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-    margin-top: 0%;
-}
+// .team-member:hover .team-member-details {
+//     -webkit-transition: 0.5s;
+//     -moz-transition: 0.5s;
+//     transition: 0.5s;
+//     margin-top: 0%;
+// }
 
 
 
@@ -704,11 +728,21 @@ label {
 .visit-calgary-link {
   text-decoration: none;
   color: $color5;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  &:hover{
+    color:$color3;
+    text-decoration: none;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  } 
 }
-.visit-calgary-link:hover{
-  color: $color5;
+// .visit-calgary-link:hover{
+//   color: 
   
-}
+// }
 
 
 
